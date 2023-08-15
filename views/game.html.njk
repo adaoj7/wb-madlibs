@@ -1,3 +1,15 @@
 {% extends 'base.html.njk' %}
 {% block title %}Greetings | Madlibs{% endblock title %}
 {% block body %}
+  <form action='/madlib'>
+    <label for="name-input">Name</label>
+    <input id="name-input" type="text" name="name"/><br/>
+    <label for="color-input">Color</label>
+    <input id="color-input" type="text" name="color"/><br/>
+    <label for="noun-input">Noun</label>
+    <input id="noun-input" type="text" name="noun"/><br/>
+    <label for="adjective-input">Adjective</label>
+    <input id="adjective-input" type="text" name="adjective"/><br/>
+    <button type="submit">Let's Go!</button>
+  </form>
+{% endblock body %}
